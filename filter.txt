@@ -1,0 +1,16 @@
+! 2023-12-25 https://www.youtube.com
+www.youtube.com##.yt-mealbar-promo-renderer
+www.youtube.com##:xpath(//div[@id=dismissible][contains(.//yt-formatted-string,"xxx")])
+#
+www.youtube.com###dismissible:has([title*="xxx"])
+#
+# チャンネルリンク先で指定（検索結果など）
+#
+www.youtube.com###dismissible:has([href="/@xxx"])
+
+!2024-02-10 https://business.nikkei.com/
+!business.nikkei.com###:xpath(//li[@class=p-articleRankingList_item][contains(.//h3,"xxx")]) ! Do not work
+
+! 2023-12-28 https://www.amazon.co.jp
+www.amazon.co.jp##:xpath(//div[@data-index][contains(.//span ,"xxx")])
+www.amazon.co.jp##:xpath(//span[@class="a-declarative"][contains(a,"xxx")])
